@@ -1,159 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <header style="text-align:center; background: linear-gradient(90deg, #ff5ca2, #ff2b6d); color: white; padding: 1rem; font-size: 1rem; font-weight: bold; border-radius: 0 0 1rem 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
-  Hey! I’m Isabella, 19 🥰 | No paywalls 🚫 | Daily FULL vids 🔥 | Over 800 exclusive videos! 🔥 | Bikes, games & dogs 🐶🎮🏍
-</header>
+<head> 
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Isabella</title>
+<meta name="description" content="View My Profile">
+<style>
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff5ca2, #ff2b6d);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+    color: #333;
+  }
+  @keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Isabella</title>
-  <meta name="description" content="View My Profile">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(135deg, #ff5ca2, #ff2b6d);
-      background-size: 400% 400%;
-      animation: gradientShift 15s ease infinite;
-      color: #333;
-    }
-    @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
+  .card {
+    background: white;
+    color: #333;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    width: 90%;
+    max-width: 400px;
+    margin: 2rem auto;
+    text-align: center;
+    animation: float 4s ease-in-out infinite;
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
 
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 2rem;
-      background: rgba(255,255,255,0.1);
-      color: white;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    header .logo { font-size: 1.5rem; font-weight: bold; }
-    header nav a { margin-left: 1.5rem; color: white; font-weight: bold; }
-    header nav a:hover { color: #ffdd59; }
+  .video-container {
+    position: relative;
+    width: 100%;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    margin-bottom: 1rem;
+  }
+  video { width: 100%; display: block; border-radius: 1.5rem; }
 
-    .card {
-      background: white;
-      color: #333;
-      padding: 2rem;
-      border-radius: 2rem;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.3);
-      width: 90%;
-      max-width: 450px;
-      margin: 2rem auto;
-      text-align: center;
-      animation: float 4s ease-in-out infinite;
-    }
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-    }
-    .card h1 { margin: 1rem 0; font-size: 2rem; color: #222; }
-    .card p { font-size: 1rem; color: #555; margin-top: 1rem; }
+  .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background: linear-gradient(145deg, #ff2b6d, #ff5ca2);
+    color: white;
+    border: none;
+    border-radius: 1.2rem;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(255, 75, 150, 0.5);
+    transition: all 0.3s ease;
+    z-index: 2;
+    animation: wobble 3s ease-in-out infinite;
+  }
+  .btn:hover {
+    background: linear-gradient(145deg, #ff5ca2, #ff2b6d);
+    box-shadow: 0 12px 25px rgba(255, 75, 150, 0.7);
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+  @keyframes wobble {
+    0%, 100% { transform: translate(-50%, -50%) rotate(0deg); }
+    25% { transform: translate(-50%, -50%) rotate(2deg); }
+    50% { transform: translate(-50%, -50%) rotate(-2deg); }
+    75% { transform: translate(-50%, -50%) rotate(1deg); }
+  }
 
-    .video-container {
-      position: relative;
-      width: 100%;
-      border-radius: 1.5rem;
-      overflow: hidden;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-      margin-bottom: 1rem;
-    }
-    video { width: 100%; display: block; border-radius: 1.5rem; }
-    .btn {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      padding: 0.9rem 1.8rem;
-      font-size: 1.1rem;
-      background: linear-gradient(145deg, #ff2b6d, #ff5ca2);
-      color: white;
-      border: none;
-      border-radius: 1.2rem;
-      text-decoration: none;
-      box-shadow: 0 8px 20px rgba(255, 75, 150, 0.5);
-      transition: all 0.3s ease;
-      z-index: 2;
-    }
-    .btn:hover {
-      background: linear-gradient(145deg, #ff5ca2, #ff2b6d);
-      box-shadow: 0 12px 25px rgba(255, 75, 150, 0.7);
-      transform: translate(-50%, -50%) scale(1.05);
-    }
+  /* 3D OPTIONS */
+  .options {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+  }
+  .option {
+    background: linear-gradient(145deg, #ff5ca2, #ff2b6d);
+    color: white;
+    padding: 0.8rem 1rem;
+    border-radius: 1rem;
+    width: 90px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(255,92,162,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    font-size: 0.9rem;
+  }
+  .option:hover {
+    transform: translateY(-6px) rotateX(10deg) scale(1.05);
+    box-shadow: 0 10px 20px rgba(255,92,162,0.7);
+  }
+  .option .badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #fff;
+    color: #ff2b6d;
+    font-size: 0.65rem;
+    font-weight: bold;
+    padding: 0.2rem 0.4rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
 
-    /* 3D Pink Options */
-    .options {
-      display: flex;
-      justify-content: space-around;
-      margin: 1.5rem 0;
-      flex-wrap: wrap;
-      gap: 1rem;
-    }
-    .option {
-      background: linear-gradient(145deg, #ff5ca2, #ff2b6d);
-      color: white;
-      padding: 1rem 1.5rem;
-      border-radius: 1rem;
-      width: 120px;
-      text-align: center;
-      font-weight: bold;
-      cursor: pointer;
-      box-shadow: 0 8px 20px rgba(255,92,162,0.5);
-      transition: transform 0.3s, box-shadow 0.3s;
-      position: relative;
-    }
-    .option:hover {
-      transform: translateY(-8px) rotateX(10deg) scale(1.05);
-      box-shadow: 0 12px 25px rgba(255,92,162,0.7);
-    }
-    .option .badge {
-      position: absolute;
-      top: -10px;
-      right: -10px;
-      background: #fff;
-      color: #ff2b6d;
-      font-size: 0.7rem;
-      font-weight: bold;
-      padding: 0.2rem 0.5rem;
-      border-radius: 50%;
-      box-shadow: 0 3px 6px rgba(0,0,0,0.2);
-    }
-  </style>
+  /* BUBBLE TEXT */
+  #bubbleText {
+    margin: 1rem 0 0.5rem 0;
+    color: white;
+    font-weight: bold;
+    font-size: 0.95rem;
+  }
+
+  /* FLOATING EMOJI */
+  .floating-emoji {
+    position: absolute;
+    font-size: 1.2rem;
+    animation: floatUp 1s ease-out forwards;
+    pointer-events: none;
+    z-index: 10;
+  }
+  @keyframes floatUp {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    100% { transform: translateY(-50px) scale(1.2); opacity: 0; }
+  }
+
+  /* RESPONSIVE */
+  @media(max-width: 480px){
+    .card { padding: 1rem; }
+    .option { width: 80px; font-size: 0.85rem; padding: 0.6rem 0.8rem; }
+    .btn { font-size: 0.9rem; padding: 0.7rem 1.2rem; }
+  }
+</style>
 </head>
 <body>
 
-
 <div class="card">
-  
   <div class="video-container">
     <video autoplay loop muted playsinline preload="auto">
       <source src="Work.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <a class="btn" href="https://cghhicb.datespix.com/s/5f4386a55e131?sub1=msazu2" target="_blank">View My Profile</a>
-  </div><p style="font-weight: bold; background: linear-gradient(90deg, #ff5ca2, #ff2b6d); 
-          color: white; padding: 0.5rem 1rem; border-radius: 0.8rem;
-          display: inline-block; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
-  View My Profile | Create an Account | Verify Your Email
+  </div>
+
+  <!-- 3RD ITEM: Bubble Text -->
+ 
+<p id="bubbleText" style="
+    background: #ff5ca2;
+    color: white;
+    font-weight: bold;
+    padding: 0.6rem 1.2rem;
+    border-radius: 1rem;
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin: 1rem 0;
+">
+ View Profile | Create a Account | 
+ Verify Your Email 
 </p>
 
-  <p> Get free access Photos, Videos, Stories, and Contacts!</p>
+
+  <!-- 4TH ITEM: Info text -->
+  <p>Get free access Photos, Videos, Stories, and Contacts!</p>
 
   <!-- 3D Pink Options -->
   <div class="options">
-    <div class="option">Photos <span class="badge">✔️</span></div>
-    <div class="option">Videos <span class="badge">✔️</span></div>
-    <div class="option">Stories <span class="badge">✔️</span></div>
-    <div class="option">Contacts <span class="badge">✔️</span></div>
+    <div class="option" onclick="showEmoji(this)">Photos <span class="badge">✔️</span></div>
+    <div class="option" onclick="showEmoji(this)">Videos <span class="badge">✔️</span></div>
+    <div class="option" onclick="showEmoji(this)">Stories <span class="badge">✔️</span></div>
+    <div class="option" onclick="showEmoji(this)">Contacts <span class="badge">✔️</span></div>
   </div>
 </div>
+
+<script>
+  function showEmoji(optionElement){
+    const bubble = document.getElementById('bubbleText');
+
+    // restart bubble animation
+    bubble.style.animation = 'none';
+    void bubble.offsetWidth;
+    bubble.style.animation = 'bubbleFade 0.5s ease forwards';
+
+    // create floating emoji for each click
+    const emoji = document.createElement('span');
+    emoji.className = 'floating-emoji';
+    emoji.textContent = '💋';
+    document.body.appendChild(emoji);
+
+    const rect = optionElement.getBoundingClientRect();
+    emoji.style.left = rect.left + rect.width/2 + 'px';
+    emoji.style.top = rect.top - 10 + 'px';
+
+    setTimeout(()=>{ emoji.remove(); }, 1000);
+  }
+</script>
 
 </body>
 </html>
